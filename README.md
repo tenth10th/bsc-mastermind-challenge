@@ -15,14 +15,15 @@ pipenv install  # (to create an environment and install)
 pipenv shell # (to open a shell in the new environment)
 ```
 
-In order to participate in the challenge, please follow the instructions here to create an account:
-And add the resulting account_uid to line 11 of your mastermind_example_client.py script.
+In order to participate in the challenge, please follow the instructions [here](http://code-challenge.org/) to create an account, and add the resulting `account_uid` to line 10 of your mastermind_example_client.py script.
 
 Once you have the requirements installed, and your account_uuid in place, you should be able to run the script:
 ```
 python mastermind_example_client.py
 ```
 (This will play a single game by default, which may take a while...)
+
+The example "totally random" player is defined in `example_player.py` - Feel free to improve it, or make your own separate Player class, and swap it in on line 1 of the `mastermind_example_client.py`.
 
 ## About the Game
 
@@ -88,8 +89,7 @@ Similar to the classic Mastermind board game, the challenge is providing hints a
 ### 4. Elementary, My Dear Watson
 To quote the fictional detective Sherlock Holmes:
 
-> "When you have eliminated all that is impossible,
-> then whatever remains, however improbable,
-> must be the truth."
+> "When you have eliminated all that is impossible, then whatever remains,  
+> however improbable, must be the truth."
 
 Is it possible to apply Sherlock's style of deductive reasoning to this problem? How can we get a computer (which is better at crunching numbers than it is at analytical reasoning) to help us apply this wisdom?
