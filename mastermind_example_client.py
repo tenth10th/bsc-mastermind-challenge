@@ -31,9 +31,9 @@ def play_mastermind():
     """Play Mastermind once (until game_over becomes True)"""
     guess_count = 0
     game_over = False
+    player = Player()
     while not game_over:
         guess_count += 1
-        player = Player()
         current_guess = player.guess()
         json_response = mastermind_post(current_guess)
         correct_digits = json_response.get("correct_digits")
